@@ -5,16 +5,14 @@ markdown: kramdown
 
 <style>
 /* these .colorX values are used to put coloring into the risk matrices */
-  th {text-align: center; font-weight: bold; background-color: lightgrey; color: black}
-  tr .color1 {background-color: #00B050; color: white}   /* low / darker green */
-  tr .color2 {background-color: #92D050; color: white}   /* kinda low / lighter green */
-  tr .color3 {background-color: #FFC000; color: white}   /* medium / yellowy-orange */
-  tr .color4 {background-color: #ED7D31; color: white}   /* medium / orangy-red */
-  tr .color5 {background-color: #FF0000; color: white}   /* kinda high / red */
-  tr .color6 {background-color: #C00000; color: white}   /* high / dark red */
+  th {text-align: center; font-weight: bold; background-color: lightgrey; color: black}   /* headers */
+  .color1 {background-color: #00B050; color: white}   /* low - darker green */
+  .color2 {background-color: #92D050; color: white}   /* kinda low - lighter green */
+  .color3 {background-color: #FFC000; color: white}   /* medium - yellowy-orange */
+  .color4 {background-color: #ED7D31; color: white}   /* medium - orangy-red */
+  .color5 {background-color: #FF0000; color: white}   /* kinda high - reddest red */
+  .color6 {background-color: #C00000; color: white}   /* high - dark red */
 </style>
-
-# TODO: ADD CROSS-REFERENCING LINKS #
 
 > ### About the Ethics & Algorithms Toolkit beta release ###
 > Welcome to the beta release of our Ethics and Algorithms Toolkit! This toolkit is designed to help governments (and others) use algorithms responsibly. "Beta" means this is a work in progress; expect it to evolve as we learn what works and what does not.
@@ -449,7 +447,7 @@ Add the points for each statement where you answered “yes”. Use the table be
 ## Step 5: Assess risk of historic bias ##
 Understanding that bias will exist at the forefront of this conversation will benefit you as well as your algorithm’s consumers. This will allow you to direct your energy toward ensuring these biases are minimized. The goal is to improve upon your current practice. 
 
-> Note: Please see the Appendix for detailed background on this important topic.
+> Note: Please see [Appendix B: Background for Bias](appendices#appendix-b-background-for-bias) for detailed background on this important topic.
 
 In this toolkit, we draw a distinction between:
 * Societal biases derived from historically biased data (due to discrimination, historical legacy, unfair policies, etc.) and
@@ -486,12 +484,12 @@ In this step, identify the level of risk due to representativeness for the data 
 | High | Data is not representative (for example: 311 data is biased to those who call 311). Use of data may lead to circular results, i.e. self-fulfilling prophecy or can only be used to study a particular subgroup. We are using variables that are poor proxies of what we are trying to measure. Any results should not be extrapolated or applied to the larger population. |
 
 > Looking for more specific tools to help you think about your algorithm’s potential bias? Uncertain about how to evaluate bias or inaccuracy? Here are a few tools to help:
-> * Appendix A: Data Questions (borrowed from the Center for Democracy and Technology)
-> * Representative Analysis (Data Science for Social Good, University of Chicago)
-> * Framework to test data accuracy
-> * Analyzing data by GovEx
-> * Data Quality by GovEx
-> * Undoing the Damage of Dataset Bias (MIT)
+> * [Appendix A: Data Questions](appendices#appendix-a-data-questions)
+> * [Representative Analysis](https://dssg.uchicago.edu/2017/10/06/representativeness_analysis/)
+> * [Framework to test data accuracy](https://www.analyticsvidhya.com/blog/2013/12/paranoid-data-accuracy-about/)
+> * [Analyzing data](https://govex.jhu.edu/wiki/analyzing-data-context/)
+> * [Data Quality](https://govex.jhu.edu/wiki/data-quality-september-2016-office-hours/)
+> * [Undoing the Damage of Dataset Bias](http://undoingbias.csail.mit.edu)
 
 #### Step 6.1.2 Assess inaccuracy risk ####
 In this step, identify the level of risk due to quality for the data used in your algorithm. Think about how the data were collected or acquired, and identify potential sources of error from training, validation, data inconsistency, subpar collection methods, etc.
