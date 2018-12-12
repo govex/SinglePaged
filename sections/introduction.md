@@ -73,7 +73,7 @@ Machine Learning
 : Machine learning is algorithms make predictions or calculated suggestions based on large amounts of data without being explicitly programmed by a person. Machine learning comes in a variety of flavors:
   1. *Supervised learning.* In this case, the machine trains on labeled data (known inputs and outputs) and describes the relationship between : the input and output. It then applies what it learns to new, unlabeled data -- i.e. linear or logistic regression, random forest classification.
   2. *Unsupervised learning.* In this case, the machine does not have known inputs and outputs -- the dependent variable is unknown and there is no expected outcome. Instead, the machine surfaces what is important in the structure of the data -- i.e. clustering and association.
-  3. *Semi-supervised learning.* In this case, the machine akes use of both unlabeled and labeled training data and uses both types of techniques -- i.e. speech recognition.
+  3. *Semi-supervised learning.* In this case, the machine makes use of both unlabeled and labeled training data and uses both types of techniques -- i.e. speech recognition.
   4. *Reinforcement learning.* In this case, the machine’s learning is “reinforced” through trial and error where each trial is either “rewarded” or not.
 
 ## Functional Categories ##
